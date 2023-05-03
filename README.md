@@ -147,3 +147,10 @@ train_model(model, dataloaders, raw_test_dataset_dict, Token_test_dataset_dict, 
 # Model Architecture
 
 # Experiment
+
+# Resources:
+https://colab.research.google.com/drive/1_0yh1XsPchZl3F3lgMI_ax9Czc5UfuPX#scrollTo=ZNSj4j8W-t8f
+
+https://colab.research.google.com/drive/1tVMFLZP1Bsxa7N4cpiwCgcVwXS1Ebtiy#scrollTo=l4rLz9d9-xZo
+
+
