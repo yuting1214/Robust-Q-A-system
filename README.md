@@ -87,9 +87,29 @@ Dataset({
 ```
 
 #### Dataloader
+
+For 'testing' data, DataLoader isn't needed.
+
 ```
 from torch.utils.data import DataLoader
 
+# Train
+DatasetDict_squad_train.set_format("torch")
+squad_train_dataloader = DataLoader(
+    DatasetDict_squad_train,
+    shuffle=True,
+    collate_fn=default_data_collator,
+    batch_size=8,
+)
+
+# Validation
+DatasetDict_squad_val.set_format("torch")
+squad_val_dataloader = DataLoader(
+    DatasetDict_squad_val,
+    shuffle=False,
+    collate_fn=default_data_collator,
+    batch_size=8,
+)
 
 ```
 
