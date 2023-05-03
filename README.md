@@ -112,24 +112,6 @@ squad_val_dataloader = DataLoader(
 )
 
 ```
-
-
-## Usage
-
-```python
-def my_function(string_arg: str, int_arg: int) -> None:
-    """
-    [Insert a brief description of the function here]
-    
-    :param string_arg: [Insert a brief description of string_arg here]
-    :type string_arg: str
-    
-    :param int_arg: [Insert a brief description of int_arg here]
-    :type int_arg: int
-    """
-    [Insert the function code here]
-```
-
 ## Training Loop
 
 ```python
@@ -161,5 +143,7 @@ train_model(model, dataloaders, raw_test_dataset_dict, Token_test_dataset_dict, 
 ```
 
 ## Evaluation
+
+# Model Architecture
 
 # Experiment
