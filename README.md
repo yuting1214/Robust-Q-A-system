@@ -2,7 +2,7 @@
 
 # Background
 
-# fds
+T
 
 ## Preparing data
 
@@ -136,22 +136,27 @@ def my_function(string_arg: str, int_arg: int) -> None:
 train_model(model, dataloaders, raw_test_dataset_dict, Token_test_dataset_dict, optimizer,
                 device, path, num_epochs=5) -> torch.model:
     """
-   
     :param model: model to be trained
     :type class_arg: transformers.models or torch.nn.Module
     
     :param dataloaders: data in the format of {'train':train_data_loader, 'val:val_data_loader}
     :type dict_arg: dict
     
-    :param
-    :type 
-      :param
-    :type 
-      :param
-    :type 
-      :param
-    :type 
+    :param raw_test_dataset_dict: test dataset in DatasetDict
+    :type class_arg: datasets.DatasetDict
+    
+    :param Token_test_dataset_dict: test dataset after tokenization in DatasetDict
+    :type class_arg: datasets.DatasetDict
   
+    :param optimizer: Optimizer from torch
+    :type class_arg: torch.optim
+  
+     :param path: Output directory
+    :type str_arg: str, '/model.pt'
+    
+    :param num_epochs: Number of epochs for training
+    :type int_arg: int
+    
     """
 ```
 
