@@ -129,11 +129,21 @@ def my_function(string_arg: str, int_arg: int) -> None:
     """
     [Insert the function code here]
 
-
-
-This project adopted 
-
 ## Training Loop
+
+```python
+train_model(model, dataloaders, raw_test_dataset_dict, Token_test_dataset_dict, optimizer,
+                device, path, num_epochs=5) -> torch.model:
+    """
+    [Insert a brief description of the function here]
+    
+    :param string_arg: [Insert a brief description of string_arg here]
+    :type string_arg: str
+    
+    :param int_arg: [Insert a brief description of int_arg here]
+    :type int_arg: int
+    """
+
 
 ## Evaluation
 
