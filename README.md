@@ -44,8 +44,8 @@ Preprocssing Procedures
 The default tokenizer is
 ```
 from transformers import AutoTokenizer
-
- 
+model_checkpoint = "bert-base-cased"
+tokenizer = AutoTokenizer.from_pretrained(model_checkpoint)
 ```
 
 #### Tokenization
@@ -66,11 +66,31 @@ DatasetDict_squad_test = example_prepare(raw_squad, 'validation', preprocess_tes
 
 #### Extraction
 
-For 'train' and 'validation' data, we have 
+For 'train' and 'validation' data, we only have to care about ['input_ids', 'attention_mask', 'start_positions', 'end_positions']
 ```
+Dataset({
+    features: ['input_ids', 'token_type_ids', 'attention_mask', 'start_positions', 'end_positions'],
+    num_rows: 88729
+})
+Dataset({
+    features: ['input_ids', 'token_type_ids', 'attention_mask', 'start_positions', 'end_positions'],
+    num_rows: 10822
+})
 ```
 
+For 'test' data, we don't have the right answer, so we only care about ['input_ids', 'attention_mask']
 ```
+Dataset({
+    features: ['input_ids', 'token_type_ids', 'attention_mask', 'offset_mapping', 'example_id'],
+    num_rows: 10822
+})
+```
+
+#### Dataloader
+```
+from torch.utils.data import DataLoader
+
+
 ```
 
 
