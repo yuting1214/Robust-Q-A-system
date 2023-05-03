@@ -128,6 +128,7 @@ def my_function(string_arg: str, int_arg: int) -> None:
     :type int_arg: int
     """
     [Insert the function code here]
+```
 
 ## Training Loop
 
@@ -135,15 +136,24 @@ def my_function(string_arg: str, int_arg: int) -> None:
 train_model(model, dataloaders, raw_test_dataset_dict, Token_test_dataset_dict, optimizer,
                 device, path, num_epochs=5) -> torch.model:
     """
-    [Insert a brief description of the function here]
+   
+    :param model: model to be trained
+    :type class_arg: transformers.models or torch.nn.Module
     
-    :param string_arg: [Insert a brief description of string_arg here]
-    :type string_arg: str
+    :param dataloaders: data in the format of {'train':train_data_loader, 'val:val_data_loader}
+    :type dict_arg: dict
     
-    :param int_arg: [Insert a brief description of int_arg here]
-    :type int_arg: int
+    :param
+    :type 
+      :param
+    :type 
+      :param
+    :type 
+      :param
+    :type 
+  
     """
-
+```
 
 ## Evaluation
 
