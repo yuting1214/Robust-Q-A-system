@@ -2,7 +2,7 @@
 
 # Background
 
-To be continued
+Build a Robust Q&A system based on [SQuAD](https://rajpurkar.github.io/SQuAD-explorer/) by experimenting different novel model architectures.
 
 ## Preparing data
 
@@ -14,6 +14,7 @@ The class of **datasets.DatasetDict** is the dataloader to handle all the pubilc
 
 An example for a Q&A dataset
 ```
+from datasets import load_dataset
 raw_squad=load_dataset("squad")
 ```
 ```
@@ -144,13 +145,16 @@ train_model(model, dataloaders, raw_test_dataset_dict, Token_test_dataset_dict, 
 
 ## Evaluation
 
+Create an class called 'Answer' to evaluate the perfomace of the model.
+
+
 # Model Architecture
 
 # Experiment
 
 # Resources:
-https://colab.research.google.com/drive/1_0yh1XsPchZl3F3lgMI_ax9Czc5UfuPX#scrollTo=ZNSj4j8W-t8f
+[Data pipeline in Colab](https://colab.research.google.com/drive/1tVMFLZP1Bsxa7N4cpiwCgcVwXS1Ebtiy?usp=sharing)
 
-https://colab.research.google.com/drive/1tVMFLZP1Bsxa7N4cpiwCgcVwXS1Ebtiy#scrollTo=l4rLz9d9-xZo
+[Final Evaluation in Colab](https://colab.research.google.com/drive/1gj8leolpWLHBk5xi2lScYmLXbxDYUyGC?usp=sharing)
 
 
