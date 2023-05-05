@@ -2,7 +2,7 @@
 
 # Background
 
-Build a Robust Q&A system based on [SQuAD](https://rajpurkar.github.io/SQuAD-explorer/) by experimenting different novel model architectures.
+Build a Robust Q&A system based on [SQuAD](https://rajpurkar.github.io/SQuAD-explorer/) by experimenting different novel model architectures and validating the model's performance on Out-of-Domain datasets.
 
 ## Preparing data
 
@@ -151,9 +151,16 @@ Create an class called 'Answer' to evaluate the perfomace of the model.
 # Model Architecture
 
 There are four kinds of architectures in this project.
-1. BERT 
+1. BERT with slight structural modification
+2. BERT with Data Augmentation
+3. BERT with Language Model(DistilBERT)
+4. DistilBERT with Mixture of Experts
 
 # Experiment
+
+(F1, Exact Match)
+
+
 
 # Resources:
 [Data pipeline in Colab](https://colab.research.google.com/drive/1tVMFLZP1Bsxa7N4cpiwCgcVwXS1Ebtiy?usp=sharing)
