@@ -147,6 +147,20 @@ train_model(model, dataloaders, raw_test_dataset_dict, Token_test_dataset_dict, 
 
 Create an class called 'Answer' to evaluate the perfomace of the model.
 
+```python
+from eval import Answer
+import evaluate
+
+# Create an instance to map examples and features in evaluating dataset
+answer = Answer(raw_eval_dataset, token_eval_dataset)
+
+# Prediction
+prediction = answer.predict_answer(eval_dataloader, model, device)
+
+# Metric Evaluation
+metric = evaluate.load("squad")
+answer.eval_answer(metric.compute)
+```
 
 # Model Architecture
 
