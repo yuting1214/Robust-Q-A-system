@@ -150,6 +150,9 @@ Create an class called 'Answer' to evaluate the perfomace of the model.
 
 # Model Architecture
 
+There are four kinds of architectures in this project.
+1. BERT 
+
 # Experiment
 
 # Resources:
