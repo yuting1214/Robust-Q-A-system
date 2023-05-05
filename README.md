@@ -174,7 +174,14 @@ There are four kinds of architectures in this project.
 
 (F1, Exact Match)
 
-
+| Model\Datasets                    | Squad(In-domain) | Duorc(Out-domain) | race(Out-domain) |
+|-----------------------------------|------------------|-------------------|------------------|
+| Raw Bert                          | (7.10, 0.14)     | (4.21, 0.09)      | (3.95, 0.10)     |
+| Freeze BERT                       | (4.71, 0.33)     | (2.21, 0.26)      | (3.21, 0.19)     |
+| Bert Remove Two encoders          | (5.69, 0.46)     | (4.31, 0.29)      | (3.81, 0.16)     |
+| Data Augmentation(Raw BERT)       | (4.62, 0.36)     | (3.41, 0.26)      | (3.83, 0.28)     |
+| Distill BERT                      | (87.02, 79.64)   | (43.72, 32.13)    | (42.17, 24.43)   |
+| Mixture of Expert on Distill BERT | (53.77, 41.51)   | (44.10, 38.11)    | (40.02, 35.34 )  |
 
 # Resources:
 [Data pipeline in Colab](https://colab.research.google.com/drive/1tVMFLZP1Bsxa7N4cpiwCgcVwXS1Ebtiy?usp=sharing)
