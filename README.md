@@ -188,4 +188,7 @@ There are four kinds of architectures in this project.
 
 [Final Evaluation in Colab](https://colab.research.google.com/drive/1gj8leolpWLHBk5xi2lScYmLXbxDYUyGC?usp=sharing)
 
+# Reference:
+
+https://huggingface.co/learn/nlp-course/chapter7/7?fw=pt
 
